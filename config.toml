@@ -1,0 +1,21 @@
+theme = "ingrid"
+
+[editor]
+bufferline = "always"
+line-number = "relative"
+mouse = false
+rulers = [80,120]
+true-color = true
+
+[keys.normal]
+# Use system clipboard
+y = "yank_main_selection_to_clipboard"
+p = "paste_clipboard_before"
+
+[keys.insert.h]
+j = "normal_mode"
+
+[keys.normal.space.c]
+r = [":w", ":config-reload"]
+o = ":config-open"
+l = ":o ~/.config/helix/languages.toml"
